@@ -13,7 +13,10 @@
     flex-direction: column;
     min-height: 100vh;
     max-width: 1440px;
-
+    }
+    
+main {
+    flex-grow: 1;
 }
 
 header {
@@ -470,26 +473,21 @@ fieldset {
     height: 40px;
 }
 
-
 /* FOOTER */
-
-
 footer {
-    position: sticky;
-    color:#EDC771;
+    width: 100%;
+    color: #EDC771;
     background-color: #1B203D;
-    font-size:15px;
+    font-size: 15px;
     letter-spacing: 2px;
-    height: auto;
-    width: auto;
-    padding: 50px;
-    z-index:1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
-#Aboutus, #Contact {
+#Aboutus,
+#Contact {
     margin: 0 1em;
     color: #EDC771;
     text-decoration: none;
