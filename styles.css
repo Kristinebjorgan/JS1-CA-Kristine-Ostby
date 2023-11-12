@@ -105,91 +105,90 @@ header {
 
 /* GAMES PAGE */
 
-#errorMessage {
- color: red;
-  background: white;
-  height: 40px;
-  width: fit-content;
-  padding: 20px;
-  margin: 0 auto; 
-  margin-top: 0%;
-  margin-bottom: 20%;
-  border: red;
-  border-radius: 15px;
+#errorMessage,
+#loader {
   text-align: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px; 
+  margin: 0 auto;
 }
 
-#loader  {
-    /* display:none; */
-    color:#EDC771;
-    border:#EDC771;
-    border-radius: 15px;
-    border-style:double;
-    padding: 20px;
-    width: fit-content;
-    margin: 20px;
+@media (min-width: 768px) {
+  #errorMessage,
+  #loader {
+    width: 70%;
+    max-width: 600px; 
+}
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-  }
-  
-  .product-container {
-    background-color: white;
-    color: #1B203D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    padding: 20px;
-  }
-  
-  .product-container img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px;
-  }
-  
-  .product-container p {
-    background-color: white;
-  }
-
-  .product-container a {
-    padding: 40px;
-  }
-  
-  .buttoncontainer a {
-    background-color: #1B203D;
-    color:#EDC771;
-    padding: 15px;
-    border-radius: 15px;;
-    margin: 40px;
-    text-decoration: none;
-  }
-
-  .button {
-    background-color: #1B203D;
-    color:#EDC771;
-    border-radius: 15px;
-    border:#1B203D;
-    text-decoration: none;
-    height: 70px;
-    width: 150px;
-    margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
 }
-  
+
+.product-container {
+  background-color: white;
+  color: #1B203D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.product-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+.product-container p {
+  background-color: white;
+}
+
+.product-container a {
+  padding: 40px;
+}
+
+.buttoncontainer a {
+  background-color: #1B203D;
+  color: #EDC771;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 40px;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #1B203D;
+  color: #EDC771;
+  border-radius: 15px;
+  border: #1B203D;
+  text-decoration: none;
+  height: 70px;
+  width: 150px;
+  margin: 20px;
+}
+
 a:hover {
-    color:#EDC771;
+  color: #EDC771;
 }
 
 .button:hover {
-    background-color: #EDC771;
-    color: #1B203D;
+  background-color: #EDC771;
+  color: #1B203D;
 }
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 /* PRODUCT PAGE */
