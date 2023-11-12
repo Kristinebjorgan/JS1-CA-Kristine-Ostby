@@ -1,0 +1,121 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your order and provide your card details">
+    <meta name="keywords" content="HTML, CSS, Gamehub, games, gaming, used, new">
+    <meta name="author" content="Kristine Bjørgan Østby">
+    <script src="https://kit.fontawesome.com/ecc68a9eb9.js" crossorigin="anonymous"></script>
+    <title>Cart - Gamehub</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Magra&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+
+    <a href="index.html"><img src="/images/gamehub logo.png" class="logo" alt="Gamehub Logo"></a>
+        <nav class="nav">
+             <h1 class="title">A universe of games</h1>
+              <a class="Home" href="index.html">Home</a>
+              <a class="Games" href="games.html">Games</a>
+              <a class="Equipment" href="games.html">Equipment</a>
+              <a class="Outlet" href="games.html">Outlet</a>
+              <input class="searchbar" type="text" placeholder="Search..">
+    
+        </nav>
+    
+            <div class="icon-container">
+            <i id="icon" class="fa-solid fa-user"></i>
+            <i id="icon" class="fa-solid fa-heart"></i>
+            <i id="icon" class="fa-solid fa-cart-shopping"></i>
+            </div>
+    
+ </header>
+
+<!-- MAIN -->
+
+<main class="cart-main">
+
+    <div class="cart-wrapper">
+
+    <div class="review">
+            <h1 id="headline-review">Review Your Order</h1>
+            <h2 id="headline-product">Forge Legend</h2>
+            <img src="/images/forgelegend.jpeg" alt="Forge Legend" id="orderimg" height="400px" width="250px">
+            
+            <div class="total">
+            <p>Subtotal</p>
+            <p>Total</p>
+            </div>
+        </div>
+
+    <div class="payment">
+    <h1 id="headline-payment">Choose payment method</h1>
+
+   <form action="success.html" method="get">
+    <div class="radioform">
+             <input type="radio" id="card" name="payment-method" value="card">
+             <label for="card">Card</label><br>
+             <input type="radio" id="klarna" name="payment-method" value="klarna">
+            <label for="klarna">Klarna</label><br>
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal">Paypal</label>
+            </div>
+    
+    <fieldset class="card-details">
+        <legend>Put in your carddetails</legend>
+
+        <div class="cardholdername">
+        <label for="cardholdername">Cardholders name</label>
+        <input id="cardholdername" name="cardholdername" type="text" placeholder="Your name">
+        </div>
+
+        <div class="cardnumb">
+            <label for="cardnumb">Card Number</label>
+            <input id="cardnumb" name="cardnumb" type="tel" placeholder="Your card number">
+        </div>
+
+        <div class="expiration">
+            <label for="expiration">Expiration date</label>
+            <input id="expiration" name="expiration" type="text" placeholder="MM/YYYY">
+        </div>
+
+        <div class="cvc">
+            <label for="cvcnumber">CVC</label>
+            <input id="cvcnumber" name="cvcnumber" type="tel" placeholder="XXX">
+        </div>
+
+        <a href="games.html" class="continue">Continue shopping</a>
+       
+        <input class="proceed" type="submit" value="proceed to checkout">
+
+        </fieldset>
+    </form>
+
+    </div>
+</div>
+
+</main>
+
+<!-- FOOTER  -->
+
+<footer>
+    <a id="Aboutus" href="about.html">About</a>
+   <a id="Contact" href="contact.html">Contact</a>
+</footer>
+
+    </main>
+    
+    </body>
+    </html>
+</footer>
+
+
