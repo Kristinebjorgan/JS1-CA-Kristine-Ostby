@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: 1440px;
     }
     
 main {
@@ -24,19 +23,57 @@ header {
     top: 0;
     background: linear-gradient(#0f1224 20%, #1B203D 80%);
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.headerlink {
+.searchbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.searchbar {
+    background-color: #768CEB;
+    padding: 0;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+} 
+
+.nav input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    font-size: 10px;
+    border-radius: 10%;
+    background-color: #edc771;
+}
+
+nav a {
     text-decoration: none;
     color:#EDC771;
     background-color: linear-gradient(#0f1224 80%, #1B203D 20%);
-    font-size: 15px;
+    font-size: 20px;
+    padding: 20px;
 } 
 
+nav a:hover {
+    font-size:25px;
+}
+
   .logo {
-    min-width: 10vh;
     width: 120px;
     height: 120px;
     padding: 0px;
@@ -45,7 +82,7 @@ header {
 
 .title {
     padding: 10px 100px 30px 20px;
-    margin: 0px;
+    margin: 10px;
     font-size: 2em; 
     background-clip: text;
     -webkit-background-clip: text;
@@ -60,47 +97,11 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-direction: row;
-    position: sticky;
 }
 
 #user, #heart, #cart {
     padding: 10px;
 }
-
-.searchbar {
-    background-color: #768CEB;
-    position: sticky;
-    padding: 0;
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    background-color:#768CEB
-}
-
-.nav {
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: row;
-} 
-
-.nav input[type=text] {
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row; */
-    padding: 6px;
-    margin-bottom: 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: none;
-    font-size: 10px;
-    border-radius: 10%;
-    background-color: #EDC771;
-    border-radius: 20px;
-}
-
 
 /* HOME PAGE */
 
